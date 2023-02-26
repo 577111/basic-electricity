@@ -142,7 +142,7 @@ margin:0 auto;
   text-align: center
 }
 .sidebar{
-  width: 30%;
+  width: 50%;
   background:rgba(125,0,0,0.7);
   height:1000px;
   position: fixed;
@@ -222,8 +222,16 @@ margin:0 auto;
   font-size: 22px;
   padding: 34px;
   border-bottom:3px solid white;
+  list-style: none;
+  
   
  
+}
+
+.home{
+  text-align:center;
+  background:gray;
+  color:rgb(233,0,255);
 }
 
 .work li p{
