@@ -4,6 +4,7 @@ var icon2=icon.querySelector('.icon2');
 var icon3=icon.querySelector('.icon3');
 var sidebar=document.querySelector('.sidebar');
 var work=document.querySelector('.work');
+
 var nav=sidebar.querySelector('ul');
 
 
@@ -21,16 +22,30 @@ var doc=document.querySelector('.work');
 var ln=sidebar.querySelector('div');
 console.log(ln);
 
+doc.addEventListener('click',()=>{
+    sidebar.style.transform='scaleX(0)';
+    icon.style.opacity ='1';
+})
+
 
 ln.addEventListener('click',(e)=>{
   sidebar.style.transform='scaleX(0)';
   icon.style.opacity ='1';
   nav.style.transform='scaleX(0)'
 });
-
+var hom=work.innerHTML= `
+   <ul style='list-style:none'>
+      <li class='home' onclick="home()">Home</li>
+      <li class='home' onclick="suggestion()">Suggestion</li>
+      <li class='home' onclick="current()">বিদ্যুৎ</li>
+      <li class='home' onclick="joint()">জোড়া</li>
+      <li class='home' onclick="circuit()">সার্কিট</li>
+    </ul>
+  `;
 
 const home=()=>{
-  work.innerHTML=``
+  work.innerHTML=hom;
+  
 }
 
 const suggestion = () =>{
@@ -69,11 +84,67 @@ const suggestion = () =>{
     <li>মেগারের নরমাল স্পীড কত?
       <p>উঃ ১২০rpm---১৬০rpm</p>
     </li>  
+    
+  <li>MCB কি এবং এর কাজ কি?
+      <p>MCB এর পূর্ণ নাম মিনিয়েচার সার্কিট ব্রেকার। যে কোন অস্বাভাবিক অবস্থায় স্বয়ংক্রিয়ভাবে সার্কিটকে মূল সাপ্লাই থেকে বিচ্ছিন্ন করে দেয়।</p></li>
+
+
+    <li>লাল, সবুজ ও কালো তার দিয়ে কি বুঝানো হয়?
+<p>
+লাল তার ফেজ, সবুজ তার আর্থ ও কালো তার দ্বারা নিউট্রাল বোঝানো হয়</p></li>
+
+<li>কিভাবে শক লাগে?
+<p>
+</p></li>
+<li>
+আর্থিং এর প্রধান তিনটি এলিমেন্ট এর নাম লিখ।
+<p>
+আর্থ নিরবিচ্ছিন্নতা তার, আর্থ ইলেক্ট্রোড, আর্থিং লিড</p></li>
+
+
+      <li>ফিউজ এলিমেন্ট হিসেবে ব্যবহৃত চারটি এলিমেন্ট এর নাম লিখ।
+      <p>সিলভার, টিন, কপার, এলুমিনিয়াম </p>
+    </li>
+ক্যাবলের ভোল্টেজ গ্রেডিং বলতে কি বুঝ? 
+সর্বোচ্চ  যে পরিমান ভোল্টেজে ক্যাবলের ইন্সুলেশন টিকে থাকতে পারে তাই এই ক্যাবলের ভোল্টেজ গ্রেডিং।
+
+    
+    <li>মেগারের নরমাল স্পীড কত?
+      <p>উঃ ১২০rpm---১৬০rpm</p>
+    </li>  
+      <li>ওয়্যার স্টিপারের কাজ কি?
+      <p>উঃ তারের উপরের ইন্সুলেশন ছাড়ানো ওয়্যার স্টিপারের </p>
+    </li>
+    
+    <li>মেগারের নরমাল স্পীড কত?
+      <p>উঃ ১২০rpm---১৬০rpm</p>
+    </li>  
+      <li>ওয়্যার স্টিপারের কাজ কি?
+      <p>উঃ তারের উপরের ইন্সুলেশন ছাড়ানো ওয়্যার স্টিপারের </p>
+    </li>
+    
+    <li>মেগারের নরমাল স্পীড কত?
+      <p>উঃ ১২০rpm---১৬০rpm</p>
+    </li>  
+    <li>ওয়্যার স্টিপারের কাজ কি?
+      <p>উঃ তারের উপরের ইন্সুলেশন ছাড়ানো ওয়্যার স্টিপারের </p>
+    </li>
+    
+    <li>মেগারের নরমাল স্পীড কত?
+      <p>উঃ ১২০rpm---১৬০rpm</p>
+    </li>  
   </ol>`;
 }
 
 const current = () =>{
-  work.innerHTML=``
+  work.innerHTML=`
+    <h2>বিদ্যুৎ </h2>
+    <p> বিদ্যুৎঃ ইলেক্ট্রনের প্রবাহকে বিদ্যুৎ বা কারেন্ট বলে। 
+    </p> 
+    <p> এ্যাম্পিয়ারঃ যে পরিমান বিদ্যুৎ খরচ হয় তার একককে এ্যাম্পিয়ার বলে। </p>
+    <p> ভোল্টঃ বৈদ্যুতিক চাপের একককে ভোল্ট বলে। </p>
+ 
+  `
 }
 
 const circuit = () =>{
@@ -145,8 +216,8 @@ const joint = ()=>{
       <li>নট টেপ জোড়া </li>
       <li> টেপ স্লিপ</li>
    
-   </ol>
+   </ol>`
    
-   `
+   
   
 }
