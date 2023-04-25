@@ -49,7 +49,7 @@ const home=()=>{
 }
 
 const suggestion = () =>{
-  work.innerHTML = `<h1>Suggestion Sheet</h1>
+  work.innerHTML = `<h1 class="sticky">Suggestion Sheet</h1>
   <ol>
     <li>পাঁচটি পিপিই এর নাম লিখ।<p>উঃ অ্যাপ্রোন, হেলমেট,গগলস,সেফটি সু,হ্যান্ড গ্লোভস</p></li>
     
