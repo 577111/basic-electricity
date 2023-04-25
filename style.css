@@ -267,7 +267,7 @@ margin:0 auto;
 .sticky{
 background:black; 
 color:white;
-position:sticky;
+position:static;
 top:0;
 
 }
